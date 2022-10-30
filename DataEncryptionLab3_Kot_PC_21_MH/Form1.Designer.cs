@@ -28,40 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.components = new System.ComponentModel.Container();
+            this.groupBox_IN = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox_C_IN = new System.Windows.Forms.TextBox();
+            this.textBox_Key_IN = new System.Windows.Forms.TextBox();
+            this.textBox_P_IN = new System.Windows.Forms.TextBox();
+            this.groupBox_OUT = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox_C_OUT = new System.Windows.Forms.TextBox();
+            this.textBox_Key_OUT = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox_P_OUT = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.button_XOR = new System.Windows.Forms.Button();
+            this.button_clean = new System.Windows.Forms.Button();
+            this.toolTip_HEX = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBox_IN.SuspendLayout();
+            this.groupBox_OUT.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBox_IN
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(56, 129);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 155);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Шифрування";
+            this.groupBox_IN.Controls.Add(this.label3);
+            this.groupBox_IN.Controls.Add(this.label2);
+            this.groupBox_IN.Controls.Add(this.label1);
+            this.groupBox_IN.Controls.Add(this.textBox_C_IN);
+            this.groupBox_IN.Controls.Add(this.textBox_Key_IN);
+            this.groupBox_IN.Controls.Add(this.textBox_P_IN);
+            this.groupBox_IN.Location = new System.Drawing.Point(56, 129);
+            this.groupBox_IN.Name = "groupBox_IN";
+            this.groupBox_IN.Size = new System.Drawing.Size(200, 155);
+            this.groupBox_IN.TabIndex = 3;
+            this.groupBox_IN.TabStop = false;
+            this.groupBox_IN.Text = "Шифрування";
             // 
             // label3
             // 
@@ -90,41 +92,41 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "P =";
             // 
-            // textBox3
+            // textBox_C_IN
             // 
-            this.textBox3.Location = new System.Drawing.Point(81, 116);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(113, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBox_C_IN.Location = new System.Drawing.Point(81, 116);
+            this.textBox_C_IN.Name = "textBox_C_IN";
+            this.textBox_C_IN.Size = new System.Drawing.Size(113, 20);
+            this.textBox_C_IN.TabIndex = 2;
             // 
-            // textBox2
+            // textBox_Key_IN
             // 
-            this.textBox2.Location = new System.Drawing.Point(81, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(113, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox_Key_IN.Location = new System.Drawing.Point(81, 72);
+            this.textBox_Key_IN.Name = "textBox_Key_IN";
+            this.textBox_Key_IN.Size = new System.Drawing.Size(113, 20);
+            this.textBox_Key_IN.TabIndex = 1;
             // 
-            // textBox1
+            // textBox_P_IN
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(113, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox_P_IN.Location = new System.Drawing.Point(81, 31);
+            this.textBox_P_IN.Name = "textBox_P_IN";
+            this.textBox_P_IN.Size = new System.Drawing.Size(113, 20);
+            this.textBox_P_IN.TabIndex = 0;
             // 
-            // groupBox2
+            // groupBox_OUT
             // 
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(555, 129);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 155);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Шифрування";
+            this.groupBox_OUT.Controls.Add(this.label4);
+            this.groupBox_OUT.Controls.Add(this.textBox_C_OUT);
+            this.groupBox_OUT.Controls.Add(this.textBox_Key_OUT);
+            this.groupBox_OUT.Controls.Add(this.label5);
+            this.groupBox_OUT.Controls.Add(this.textBox_P_OUT);
+            this.groupBox_OUT.Controls.Add(this.label6);
+            this.groupBox_OUT.Location = new System.Drawing.Point(555, 129);
+            this.groupBox_OUT.Name = "groupBox_OUT";
+            this.groupBox_OUT.Size = new System.Drawing.Size(200, 155);
+            this.groupBox_OUT.TabIndex = 4;
+            this.groupBox_OUT.TabStop = false;
+            this.groupBox_OUT.Text = "Розшифрування";
             // 
             // label4
             // 
@@ -135,6 +137,20 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "= C";
             // 
+            // textBox_C_OUT
+            // 
+            this.textBox_C_OUT.Location = new System.Drawing.Point(18, 112);
+            this.textBox_C_OUT.Name = "textBox_C_OUT";
+            this.textBox_C_OUT.Size = new System.Drawing.Size(113, 20);
+            this.textBox_C_OUT.TabIndex = 2;
+            // 
+            // textBox_Key_OUT
+            // 
+            this.textBox_Key_OUT.Location = new System.Drawing.Point(18, 68);
+            this.textBox_Key_OUT.Name = "textBox_Key_OUT";
+            this.textBox_Key_OUT.Size = new System.Drawing.Size(113, 20);
+            this.textBox_Key_OUT.TabIndex = 1;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -143,6 +159,13 @@
             this.label5.Size = new System.Drawing.Size(34, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "= Key";
+            // 
+            // textBox_P_OUT
+            // 
+            this.textBox_P_OUT.Location = new System.Drawing.Point(18, 27);
+            this.textBox_P_OUT.Name = "textBox_P_OUT";
+            this.textBox_P_OUT.Size = new System.Drawing.Size(113, 20);
+            this.textBox_P_OUT.TabIndex = 0;
             // 
             // label6
             // 
@@ -153,82 +176,64 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "= P";
             // 
-            // textBox4
+            // button_XOR
             // 
-            this.textBox4.Location = new System.Drawing.Point(18, 112);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(113, 20);
-            this.textBox4.TabIndex = 2;
+            this.button_XOR.Location = new System.Drawing.Point(335, 142);
+            this.button_XOR.Name = "button_XOR";
+            this.button_XOR.Size = new System.Drawing.Size(154, 55);
+            this.button_XOR.TabIndex = 5;
+            this.button_XOR.Text = "XOR";
+            this.button_XOR.UseVisualStyleBackColor = true;
+            this.button_XOR.Click += new System.EventHandler(this.button_XOR_Click);
             // 
-            // textBox5
+            // button_clean
             // 
-            this.textBox5.Location = new System.Drawing.Point(18, 68);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(113, 20);
-            this.textBox5.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(18, 27);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(113, 20);
-            this.textBox6.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(335, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 55);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "XOR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(335, 219);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 65);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_clean.Location = new System.Drawing.Point(335, 219);
+            this.button_clean.Name = "button_clean";
+            this.button_clean.Size = new System.Drawing.Size(154, 65);
+            this.button_clean.TabIndex = 6;
+            this.button_clean.Text = "Clear";
+            this.button_clean.UseVisualStyleBackColor = true;
+            this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.button_clean);
+            this.Controls.Add(this.button_XOR);
+            this.Controls.Add(this.groupBox_OUT);
+            this.Controls.Add(this.groupBox_IN);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBox_IN.ResumeLayout(false);
+            this.groupBox_IN.PerformLayout();
+            this.groupBox_OUT.ResumeLayout(false);
+            this.groupBox_OUT.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox_IN;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textBox_C_IN;
+        private System.Windows.Forms.TextBox textBox_Key_IN;
+        private System.Windows.Forms.TextBox textBox_P_IN;
+        private System.Windows.Forms.GroupBox groupBox_OUT;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox_C_OUT;
+        private System.Windows.Forms.TextBox textBox_Key_OUT;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox_P_OUT;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_XOR;
+        private System.Windows.Forms.Button button_clean;
+        private System.Windows.Forms.ToolTip toolTip_HEX;
     }
 }
 
